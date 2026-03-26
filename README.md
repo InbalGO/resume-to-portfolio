@@ -61,13 +61,10 @@ npm run dev
 **Backend Setup:**
 ```bash
 cd backend
-# Create and activate a virtual environment
-python -m venv .venv
-# On Windows
-.venv\Scripts\activate
-# Install dependencies
-pip install -r requirements.txt # Or configure using pyproject.toml / uv
-uvicorn app.main:app --reload
+# Install dependencies and sync the environment
+uv sync
+# Run the FastAPI application
+uv run uvicorn app.main:app --reload
 ```
 
 ## 🏅 Created By
